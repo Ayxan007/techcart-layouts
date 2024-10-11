@@ -1,0 +1,12 @@
+@import "./layout/header";
+@import "./layout/footer";
+@import "./util/mixins";
+@import "./util/variables";
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
