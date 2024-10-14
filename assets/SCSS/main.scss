@@ -2,11 +2,16 @@
 @import "./layout/footer";
 @import "./util/mixins";
 @import "./util/variables";
-*{
-    margin: 0;
-    padding: 0;
+@import "./home/categories-img";
+@import "./home/advice";
+@import "./home/content";
+@import "./home/brand-variety";
+@import "./home/shop.now";
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    width: 100%;
-    margin: 0 auto;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }

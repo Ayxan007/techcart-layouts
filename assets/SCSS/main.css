@@ -9,6 +9,8 @@
 .flag-title {
   color: white;
   font-family: sans-serif;
+  padding-right: 60px;
+  padding-top: 3px;
 }
 
 .header-main {
@@ -89,6 +91,278 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header-buttom {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttom-title {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  font-family: monospace;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.buttom-title a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.buttom-title a:hover {
+  color: #1A73E8;
+}
+
+.hover-area {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover-area:hover .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  list-style-type: none;
+}
+
+.dropdown li {
+  padding: 8px 0;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li:hover {
+  color: #1A73E8;
+  text-decoration: underline;
+  background-color: white;
+}
+
+.vstore {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mobile-header {
+  display: none;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+  mobile-header {
+    display: flex;
+  }
+  .mobile-top {
+    background-color: black;
+    padding: 20px 255px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .mob-flag-title {
+    color: white;
+    font-size: 23px;
+    font-family: sans-serif;
+  }
+}
+#categories-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.advice-title h1 {
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px 60px;
+}
+
+.card {
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.card img {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title {
+  width: 150%;
+  color: #8c8c8c;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card-price {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.cardbtn {
+  padding: 10px 40px;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.cardbtn:hover {
+  background-color: blue;
+  color: white;
+}
+
+#content img {
+  width: 100%;
+  height: 100%;
+}
+
+#brand-variety {
+  padding: 0px 100px 0px 100px;
+}
+
+.variety-title h1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.variety {
+  padding-top: 20px;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.brand-card {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.brand-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+.brand-card img:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+}
+
+.brandbtn {
+  text-align: center;
+  padding: 10px 20px;
+  color: #0099CC;
+  background-color: black;
+  border: 2px solid #0099CC;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.brandbtn:hover {
+  background-color: #0099CC;
+  color: white;
+}
+
+.brandtext {
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+#shop-now {
+  margin: 50px 100px 0px 100px;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.shop img {
+  width: 100%;
+  height: auto;
+}
+
+.img-title {
+  position: relative;
+  top: 10%;
 }
 
 * {

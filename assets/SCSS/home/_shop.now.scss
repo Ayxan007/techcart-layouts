@@ -1,0 +1,15 @@
+#shop-now {
+  margin: 50px 100px 0px 100px;
+}
+.shop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.img-title {
+  position: relative;
+  top: 10%;
+}
