@@ -1,172 +1,176 @@
-.header-top{
-    background-color: black;
-    padding: 12px;
+.header-top {
+  background-color: black;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.flag-title {
+  color: white;
+  font-family: sans-serif;
+  padding-right: 60px;
+  padding-top: 3px;
+}
+.header-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a73e8;
+  padding: 20px;
+  gap: 130px;
+}
+.header-logo {
+  padding-left: 50px;
+}
+.web-logo {
+  height: auto;
+}
+.home-info {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding-right: 70px;
+  li {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  svg {
+    margin-bottom: 10px;
+  }
 }
-.flag-title{
-    color: white;
-    font-family: $sans-serif;
-    padding-right: 60px;
-    padding-top: 3px;
-}
-.header-main{
-    @include flex-center;
-    background-color: $openblue;
-    padding: 20px;
-    gap: 130px;
-}
-.header-logo{
-    padding-left: 50px;
-}
-.web-logo{ 
-    height: auto;
-}
-.home-info{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    padding-right: 70px;
-    li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    svg{
-        margin-bottom: 10px;
-    }
-}
-.home-search{
-    padding: 10px;
-    border: 3px solid white;
-    border-radius: 3px;
-    font-size: 16px;
-    width: 80%;
-    padding-left: 40px;
+.home-search {
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 80%;
+  padding-left: 40px;
 }
 .home-search::placeholder {
-    padding-left: 10px; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #8c8c8c;
-
-  }
-.header-left{
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #8c8c8c;
+}
+.header-left {
+  display: flex;
+  justify-content: flex-end;
+}
+.info-logo {
+  width: 30px;
+}
+.logo-title {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+}
+.search {
+  position: relative;
+  width: 100%;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-buttom {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.buttom-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  font-family: monospace;
+  gap: 100px;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: black;
     display: flex;
-    justify-content: flex-end;
-}
-.info-logo{
-    width: 30px;
-}
-.logo-title{
-    font-family: $sans-serif;
-    color: white;
-    font-size: 15px;
-}
-.search{
-    position: relative; 
-    width: 100%;
-}
-.search-icon{
-    position: absolute; 
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%)
-}
-.header-buttom{
-    background-color:#ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-.buttom-title{
-    @include flex-center;
-    list-style: none;
-    font-size: 20px;
-    font-family: monospace;
-    gap: 100px;
-    font-weight: bold;
-    a{
-        text-decoration: none;
-        color: black;
-        @include flex-center;
-        text-align: center;
-        gap: 10px;
-        &:hover{
-            color: $openblue;
-        }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    &:hover {
+      color: #1a73e8;
     }
+  }
 }
 .hover-area {
-    display: inline-block;
-    position: relative;
-    padding: 10px;
-    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    background-color:  #f0f0f0;
-    width: 200px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: sans-serif;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hover-area:hover .dropdown {
-    display: block;
+  display: block;
 }
 
 .dropdown ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .dropdown li {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 .dropdown li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .dropdown li:hover {
-    color: $openblue;
-    text-decoration: underline;
-    background-color: white;
+  color: #1a73e8;
+  text-decoration: underline;
+  background-color: white;
 }
-.vstore{
-    background-color: black;
-    color: white;
-    font-size: 24px;
-    font-family: $sans-serif;
-    @include flex-center;
+.vstore {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-mobile-header{
-    display: none;
+.mobile-header {
+  display: none;
 }
 @media (max-width: 768px) and (min-width: 481px) {
-    header{
-        display: none;
+  header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+  .mobile-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mob-flag-title {
+      color: white;
+      font-size: 23px;
+      font-family: sans-serif;
     }
-    main{
-        display: none;
-    }
-    mobile-header{
-        display: flex;
-    }
-    .mobile-top{
-        background-color: black;
-        padding: 20px 255px;
-        height: 100%;
-        @include flex-center;
-        gap: 15px;
-    }
-    .mob-flag-title{
-        color: white;
-        font-size: 23px;
-        font-family: $sans-serif;
-    }
+  }
 }

@@ -1,0 +1,15 @@
+.shops-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}

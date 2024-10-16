@@ -1,0 +1,61 @@
+.sign {
+  display: flex;
+  background-color: #1a73e8;
+}
+.sign-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+  }
+  .sign-text {
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 75%;
+  }
+}
+.sosial-svgs {
+  display: flex;
+  width: 150px;
+  gap: 15px;
+}
+.sign-image {
+  img {
+    width: 300px;
+  }
+}
+.sign-me {
+  padding-left: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  input {
+    padding: 15px 100px;
+  }
+  button {
+    padding: 15px 135px;
+    color: white;
+    font-family: sans-serif;
+    background-color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

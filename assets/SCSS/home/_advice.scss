@@ -5,13 +5,33 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     padding-top: 20px;
-    @include flex-center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .add-to-cart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 25px 60px;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.dot.active {
+  background-color: black;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
 }
 .card {
   margin: 0 auto;
@@ -23,21 +43,29 @@
   align-items: center;
   text-align: center;
   gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   img {
     width: 350px;
-    height: 350px;
-    object-fit: cover;
+    height: auto;
   }
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 .card-title {
   width: 150%;
   color: #8c8c8c;
-  font-family: $sans-serif;
-  @include flex-center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
 }
 .card-price {
-  font-family: $sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   font-weight: bold;
   margin: 10px 0;
@@ -47,7 +75,7 @@
   background-color: white;
   color: blue;
   border: 2px solid blue;
-  font-family: $sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   cursor: pointer;
   font-weight: bold;

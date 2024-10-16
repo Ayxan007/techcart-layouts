@@ -1,0 +1,49 @@
+#customer {
+  background-color: rgb(65, 187, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  padding: 25px;
+}
+.customer-text {
+  margin-bottom: 10px;
+  h2 {
+    font-size: 35px;
+    font-family: sans-serif;
+    color: white;
+  }
+  p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+  }
+}
+.fast {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  svg {
+    width: 60px;
+    height: 100%;
+  }
+}
+.sumbit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.email {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
