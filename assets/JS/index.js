@@ -1,5 +1,5 @@
+// advice sections
 const cards = document.querySelectorAll(".card");
-
 const dots = document.querySelectorAll(".dot");
 
 let currentIndex = 0;
@@ -32,4 +32,16 @@ dots.forEach((dot) => {
     currentIndex = parseInt(dot.dataset.index);
     showCards(currentIndex);
   });
+});
+
+// brands page
+const dataElfhabet = document.querySelectorAll('.brands-head a');
+
+dataElfhabet.forEach(data => {
+    data.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = data.getAttribute('data-target'); 
+        const targetEl = document.getElementById(target);
+        targetEl.scrollIntoView({ behavior: 'smooth' }); 
+    });
 });
