@@ -10,7 +10,7 @@ function showCards(index) {
       card.style.display = "flex";
       setTimeout(() => {
         card.classList.add("show");
-      }, 50);
+      }, 80);
     } else {
       card.classList.remove("show");
       card.style.display = "none";
@@ -34,6 +34,41 @@ dots.forEach((dot) => {
   });
 });
 
+// shop section
+const cardShops = document.querySelectorAll(".card-shop");
+const dotShops = document.querySelectorAll(".dot-shop");
+
+let defoltShopIndex = 0;
+
+function showShopCards(index) {
+  cardShops.forEach((card, el) => {
+    if (el >= index * 4 && el < (index + 1) * 4) {
+      card.style.display = "flex";
+      setTimeout(() => {
+        card.classList.add("show");
+      }, 80);
+    } else {
+      card.classList.remove("show");
+      card.style.display = "none";
+    }
+  });
+
+  dotShops.forEach((dot, el) => {
+    dot.classList.toggle("active", el === index);
+  });
+}
+
+window.addEventListener('load', () => {
+  showShopCards(0);
+});
+
+dotShops.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    showShopCards(index);
+  });
+});
+
+
 // brands page
 const dataElfhabet = document.querySelectorAll('.brands-head a');
 
@@ -45,3 +80,24 @@ dataElfhabet.forEach(data => {
         targetEl.scrollIntoView({ behavior: 'smooth' }); 
     });
 });
+
+
+const img = document.querySelector("#img-set");
+const images = [
+  "./assets/image/Mobile-Phones.jpg",
+  "./assets/image/Macbooks.jpg",
+  "./assets/image/CCTV-Camera.jpg",
+  "./assets/image/Laptops.jpg",
+  "./assets/image/Smart-Watches.jpg",
+];
+
+let num = 0;
+let interval;
+
+interval = setInterval(() => {
+  num++;
+  if (num >= images.length) {
+    num = 0;
+  }
+  img.src = images[num];
+}, 3000);

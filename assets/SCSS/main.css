@@ -95,7 +95,7 @@
 
 .header-buttom {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -515,9 +515,88 @@
   font-weight: bold;
 }
 
-.card.show {
+.add-to-cart-shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px 60px;
+}
+
+.indicators-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.dot-shop.active {
+  background-color: black;
+}
+
+.dot-shop {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-shop {
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.card-shop img {
+  width: 350px;
+  height: auto;
+}
+
+.card-shop.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.card-title-shop {
+  width: 150%;
+  color: #8c8c8c;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card-price-shop {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.cardbtn-shop {
+  padding: 10px 40px;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.cardbtn-shop:hover {
+  background-color: blue;
+  color: white;
 }
 
 .sign {
@@ -642,13 +721,12 @@ footer {
   background-color: black;
   padding: 50px 0px;
 }
-
-ul {
+footer ul {
   color: white;
   font-family: sans-serif;
   list-style: none;
 }
-ul li {
+footer ul li {
   margin-bottom: 15px;
 }
 

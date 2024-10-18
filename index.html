@@ -31,7 +31,7 @@
                 stroke="#c2c2c2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </g>
           </svg>
-          <input class="home-search" type="text" placeholder="Search for products..." />
+          <input class="home-search"  id="searchInput" type="text" placeholder="Search for products..." />
         </div>
         <div class="header-left">
           <ul class="home-info">
@@ -518,7 +518,7 @@
   <main>
     <section id="categories-image">
       <div class="container">
-        <img src="./assets/image/Mobile-Phones.jpg">
+        <img id="img-set" src="./assets/image/Mobile-Phones.jpg">
       </div>
     </section>
     <section id="advice">
@@ -528,7 +528,7 @@
         </div>
         <div class="add-to-cart">
           <div class="card">
-            <img src="./assets/image/IPG-GWN7831.jpg" alt="GWN7381" style="height: 400px;">
+            <img src="./assets/image/IPG-GWN7831.jpg" alt="GWN7381" style="height: 350px;">
             <span class="card-title">
               Grandstream GWN7831 Enterprise Layer 3 Managed Aggregation Switch, 20 x SFP, 4 x SFP/GigE Combo, 4 x SFP+,
               Redundant PSU
@@ -787,47 +787,175 @@
         <div class="shops-title">
           <h1>WHAT`S HOT</h1>
         </div>
-        <div class="add-to-cart">
-          <div class="card">
+        <div class="add-to-cart-shop">
+          <div class="card-shop">
             <img src="./assets/image/NWTL-PS110P.jpg" alt="TP-LINK">
-            <span class="card-title">
+            <span class="card-title-shop">
               TP-Link PS110P Printer Server Single Parallel port 10/100 Mbps
             </span>
-            <span class="card-price">AUD $78.38</span>
-            <button class="cardbtn">ADD TO CART</button>
+            <span class="card-price-shop">AUD $78.38</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
           </div>
-          <div class="card">
+          <div class="card-shop">
             <img src="./assets/image/5.-JBL_FLIP6_RIGHT_BLACK_thmb.jpg" alt="loudspeaker">
-            <span class="card-title">
+            <span class="card-title-shop">
               JBL Flip 6 Speaker (Midnight Black)
             </span>
-            <span class="card-price">AUD $158.75</span>
-            <button class="cardbtn">ADD TO CART</button>
+            <span class="card-price-shop">AUD $158.75</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
           </div>
-          <div class="card">
-            <img src="./assets/image/SIPPWR5V2A-AU.jpg" alt="adapter">
-            <span class="card-title">
+          <div class="card-shop">
+            <img src="./assets/image/SIPPWR5V2A-AU.jpg"  alt="adapter" style="height: 350px">
+            <span class="card-title-shop">
               5V / 2A AU Power Adapter for T29/T3x/T46/T48/T5x series IPPhones – AU Model
             </span>
-            <span class="card-price">AUD 31.25</span>
-            <button class="cardbtn">ADD TO CART</button>
+            <span class="card-price-shop">AUD 31.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
           </div>
-          <div class="card">
-            <img src="./assets/image/SC7-X5PRO.jpg" alt="Advice-storage">
-            <span class="card-title">
+          <div class="card-shop">
+            <img src="./assets/image/SC7-X5PRO.jpg" alt="intel-storage">
+            <span class="card-title-shop">
               LEADER Intel PC Stick SC7, Intel Quad Core Z8350, 4GB, 64GB Storage, Windows 10 Professional, 1 year
               Warranty, USB, HDMI, Micro SD W10P
             </span>
-            <span class="card-price">AUD $343.75</span>
-            <button class="cardbtn">ADD TO CART</button>
+            <span class="card-price-shop">AUD $343.75</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/TEAMS-UH36-M.jpg" alt="headset">
+            <span class="card-title-shop">
+Teams Certified Wideband Noise Cancelling Headset
+            </span>
+            <span class="card-price-shop">AUD $125.00</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/LD0005818971_1.jpg" alt="cleaner">
+            <span class="card-title-shop">
+Xiaomi Mi Vacuum Cleaner G10
+            </span>
+            <span class="card-price-shop">AUD $301.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/KBLT-K800.jpg" style="height: 350px" alt="keyboard">
+            <span class="card-title-shop">
+              Logitech K800 Wireless Keyboard Adjustable Backlit Illumminum Hand Proximity Detection PerfectStroke key system 3yr wty
+            </span>
+            <span class="card-price-shop">AUD $181.50</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/NHP-180-T.jpg" alt="Modem">
+            <span class="card-title-shop">
+              Proscend VDSL2 SFP Modem, Suitable For -20°C to 75°C temperature range, Suitable For Ubiquit USG and EdgeRouter – With 2021 NBN Compatible Firmware
+            </span>
+            <span class="card-price-shop">AUD $179.69</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/45763.jpg" alt="Sony Lens">
+            <span class="card-title-shop">
+Sony FE 85mm f/1.8 Lens (SEL85F18)
+            </span>
+            <span class="card-price-shop">AUD $805.00</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/52396.jpeg" alt="Samsung phone">
+            <span class="card-title-shop">
+Samsung Galaxy Z Flip F700F DS (256GB/8GB, Mirror Purple)
+            </span>
+            <span class="card-price-shop">AUD $1,021.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/MFSGA21S128WHT.jpg" alt="Samsung phone" style="height: 350px;">
+            <span class="card-title-shop">
+              SAMSUNG GALAXY A21s 128GB WHITE – 6.5′, Octa Core, Quad Camera, 6GB / 128GB, 5,000 mAh Battery
+            </span>
+            <span class="card-price-shop">AUD $371.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/51677.jpg" alt="Airpods">
+            <span class="card-title-shop">
+Apple AirPods Pro with Wireless Charging Case (MWP22)
+            </span>
+            <span class="card-price-shop">AUD $400.00</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/48247.jpeg" alt="Camera">
+            <span class="card-title-shop">
+Fujifilm X-T100 Kit with 15-45mm (Champagne Gold)
+            </span>
+            <span class="card-price-shop">AUD $756.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/57323.jpeg" alt="Samsung Phone">
+            <span class="card-title-shop">
+Samsung Galaxy A02s A025F-DS (32GB/3GB, Red)
+            </span>
+            <span class="card-price-shop">AUD $237.50</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/54572-2048x2048.jpeg" alt="Advice-storage">
+            <span class="card-title-shop">
+Sony WH-1000XM4 Wireless Over-Ear Headphone (Silver)
+            </span>
+            <span class="card-price-shop">AUD $463.75</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/CBAT-MINIDPHDMI-5.jpg" alt="HDMI Cable">
+            <span class="card-title-shop">
+              Astrotek Mini DisplayPort DP to HDMI Cable 5m – 20 pins Male to 19 pins Male 32AWG Gold Plated
+            </span>
+            <span class="card-price-shop">AUD $36.25</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/56567.jpg" alt="Google Phone">
+            <span class="card-title-shop">
+Google Pixel 4a 5G (128GB+6, Just Black)
+            </span>
+            <span class="card-price-shop">AUD $712.50</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/MNG-CV27Q-AP.jpg" alt="Monitor" style="height: 350px;">
+            <span class="card-title-shop">
+              Gigabyte AORUS CV27Q-AP 27′ Curve Tactical Gaming Monitor FHD 165Hz 1ms AMD FreeSync 1500R DCI-P3 HDR RGB 8bits Tilt Swivel Height Adjust HDMI DP USB
+            </span>
+            <span class="card-price-shop">AUD $797.50</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/UPPS-RPR-6HMCB.jpg" alt="PowerShield">
+            <span class="card-title-shop">
+PowerShield 6 Way PDU with Australian Sockets – horizontal
+            </span>
+            <span class="card-price-shop">AUD $160.00</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
+          </div>
+          <div class="card-shop">
+            <img src="./assets/image/MNHP-1FH46AA.jpg" alt="Monitor" style="height: 370px;">
+            <span class="card-title-shop">
+              HP EliteDisplay E233 23′ FHD LED IPS Anti-Glare 1920×1080, DisplayPort, VGA, HDMI, USB 3.0, Tilt, Swivel, Pivot, Height Adjustment 3YR WTY MONITOR
+            </span>
+            <span class="card-price-shop">AUD $302.50</span>
+            <button class="cardbtn-shop">ADD TO CART</button>
           </div>
         </div>
-        <div class="indicators">
-          <span class="dot" data-index="0"></span>
-          <span class="dot" data-index="1"></span>
-          <span class="dot" data-index="2"></span>
-          <span class="dot" data-index="3"></span>
-          <span class="dot" data-index="4"></span>
+        <div class="indicators-shop">
+          <span class="dot-shop" data-index="0"></span>
+          <span class="dot-shop" data-index="1"></span>
+          <span class="dot-shop" data-index="2"></span>
+          <span class="dot-shop" data-index="3"></span>
+          <span class="dot-shop" data-index="4"></span>
         </div>
       </div>
     </section>
