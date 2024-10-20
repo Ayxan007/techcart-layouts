@@ -1,6 +1,35 @@
-#categories-image {
+.img-setInterval {
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
+  }
+}
+.indicators-img {
+  padding-bottom: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.dot-img.active {
+  background-color: black;
+}
+.dot-img {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  #categories-image {
+    .container {
+      .indicators-img {
+        display: none;
+      }
+    }
   }
 }

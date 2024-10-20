@@ -33,6 +33,8 @@ dots.forEach((dot) => {
     showCards(currentIndex);
   });
 });
+//
+
 
 // shop section
 const cardShops = document.querySelectorAll(".card-shop");
@@ -67,6 +69,7 @@ dotShops.forEach((dot, index) => {
     showShopCards(index);
   });
 });
+//
 
 
 // brands page
@@ -80,9 +83,11 @@ dataElfhabet.forEach(data => {
         targetEl.scrollIntoView({ behavior: 'smooth' }); 
     });
 });
+//
 
-
+// categories-img section
 const img = document.querySelector("#img-set");
+
 const images = [
   "./assets/image/Mobile-Phones.jpg",
   "./assets/image/Macbooks.jpg",
@@ -94,10 +99,36 @@ const images = [
 let num = 0;
 let interval;
 
-interval = setInterval(() => {
-  num++;
-  if (num >= images.length) {
-    num = 0;
-  }
-  img.src = images[num];
-}, 3000);
+const dotImgSlider = document.querySelectorAll(".dot-img");
+
+
+function startInterval() {
+  interval = setInterval(() => {
+    num++;
+    if (num >= images.length) {
+      num = 0;
+    }
+    updateImageDots(num);
+  }, 3000);
+}
+
+function updateImageDots(index) {
+  img.src = images[index];
+  dotImgSlider.forEach((dot, i) => {
+    dot.classList.remove("active"); 
+  });
+  dotImgSlider[index].classList.add("active"); 
+}
+
+startInterval();
+
+dotImgSlider.forEach((dot) => {
+  dot.addEventListener("click", (el) => {
+    num = parseInt(el.target.dataset.index); 
+    clearInterval(interval); 
+    updateImageDots(num); 
+    startInterval();
+  });
+});
+
+updateImageDots(num);

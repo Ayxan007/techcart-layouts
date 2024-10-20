@@ -84,3 +84,36 @@
     color: white;
   }
 }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #hot-shops {
+    .container {
+      .shops-title {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .add-to-cart-shop {
+        padding: 0;
+        place-items: center;
+        .card-shop {
+          margin: 0;
+          width: 0;
+          .card-title-shop {
+            font-size: 15px;
+            width: 0;
+            margin: 0;
+          }
+          .card-price-shop {
+            margin: 0;
+          }
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

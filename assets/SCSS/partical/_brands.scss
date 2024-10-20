@@ -1,5 +1,5 @@
-.brands-title{
-    background-color: #1a73e8;
+.brands-title {
+  background-color: #1a73e8;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -7,37 +7,37 @@
   color: white;
   padding: 30px 80px;
 }
-.brands-head{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    a{
-      text-decoration: none;
-      color: black;
-    }
+.brands-head {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
-.brands-card{
-    padding: 50px 100px;
-    img{
-        width: 180px;
-        padding-left: 50px;
-        padding-top: 15px;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-        font-family: sans-serif;
-        cursor: pointer;
-    }
-    h2{
-        font-family: sans-serif;
-        font-size: 20px;
-    }
+.brands-card {
+  padding: 50px 100px;
+  img {
+    width: 180px;
+    padding-left: 50px;
+    padding-top: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+  }
 }

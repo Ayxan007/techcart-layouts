@@ -47,3 +47,19 @@
   font-size: 15px;
   font-family: sans-serif;
 }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #customer {
+    gap: 15px;
+    .customer-text {
+      h2 {
+        font-size: 25px;
+        color: black;
+      }
+      p {
+        font-size: 20px;
+        color: black;
+      }
+    }
+  }
+}

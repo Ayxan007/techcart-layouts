@@ -37,3 +37,11 @@ footer {
     fill: #fff;
   }
 }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    .container-ul {
+      gap: 40px;
+    }
+  }
+}

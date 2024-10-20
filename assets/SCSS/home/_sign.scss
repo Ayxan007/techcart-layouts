@@ -59,3 +59,35 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 768px) and (min-width: 481px) {
+  #sign-up {
+    .container {
+      .sign {
+        display: block;
+        .sign-title {
+          gap: 20px;
+          h2 {
+            font-size: 25px;
+            padding-top: 20px;
+          }
+        }
+        .sign-image {
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+          img {
+            width: 250px;
+          }
+        }
+        .sign-me {
+          padding-left: 0;
+          padding-top: 30px;
+          button {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

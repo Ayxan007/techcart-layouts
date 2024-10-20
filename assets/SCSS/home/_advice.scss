@@ -85,3 +85,35 @@
     color: white;
   }
 }
+@media (max-width: 768px) and (min-width: 481px) {
+  #advice {
+    .container {
+      .advice-title {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .add-to-cart {
+        padding: 0;
+        place-items: center;
+        .card {
+          margin: 0;
+          width: 0;
+          .card-title {
+            font-size: 15px;
+            width: 0;
+            margin: 0;
+          }
+          .card-price {
+            margin: 0;
+          }
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
